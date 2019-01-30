@@ -1,0 +1,7 @@
+Thibaut Courtois au Real Madrid, ça donne quoi ?
+
+Garder les buts du Real Madrid n'est jamais chose aisée. Et Thibaut Courtois en a fait les frais. Arrivé en grande pompe contre 35 millions d'euros en provenance de Chelsea, l'international belge a mis du temps à convaincre du côté de la capitale espagnole. Il a notamment encaissé 25 buts en 18 rencontres de Championnat cette saison. Et le quotidien AS s'était montré virulent à propos du gardien de 26 ans après une prestation en demi-teinte contre Levante (défaite 1-2 du Real Madrid). «La réalité, c'est que Thibaut Courtois n'est pas le mur qu'on attendait au Real Madrid, Levante l'a approché deux fois... et a marqué deux fois», pouvait-on lire sur le site du média espagnol. Cependant, la tendance semble s'être inversée depuis quelques semaines. «Courtois a retrouvé le sourire et Solari a mis un terme au débat sur le maintien de Courtois dans les buts. Il l'a remercié en ne prenant pas de buts contre Rome et Valence», écrivait Marca lors d'une mise au point sur le début de saison du Belge. Mais si l'ancien joueur de Chelsea ne fait pas encore l'unanimité en Espagne, en Belgique on pense que le naufrage du Real Madrid est collectif.
+
+//Essayer de faire une connexion à la base de donnée afin de se connecter
+
+Afin que le site s'affiche démarrer le serveur NodeJs à la racine du projet

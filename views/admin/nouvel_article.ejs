@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nouvel Article</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/asset/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h2 class="text-center bg-success">Administration</h2>
+        <h3>Ajoutez un nouvel article</h3>
+        <br>
+        <form action="/nouvel_article" method="POST" id="formNouvelArticle" class="col-5 offset-3">
+            <div class="form-group">
+                <label for="titre">Titre</label>
+                <input type="text" name="titre" id="titre" class="form-control" placeholder="Entrez le titre de votre article" required>
+            </div>
+            <div class="form-group">
+                <label for="url">Url</label>
+                <input type="file" name="url" id="url" class="form-control" placeholder="Choisissez votre image" required>
+            </div>
+            <div class="form-group">
+                <label for="contenu">Contenu</label>
+                <textarea name="contenu" id="contenu" cols="30" rows="10" class="form-control" placeholder="Entrez votre texte" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="auteur">Auteur</label>
+                <input type="text" name="auteur" id="auteur" class="form-control" placeholder="Entrez votre Nom" required>
+            </div>
+            <div class="form-group">
+                <label for="url">Parution</label>
+                <input type="date" name="parution" id="parution" class="form-control" placeholder="Entrez la date" required>
+            </div>
+            <button type="submit" class="btn btn-rounded btn-success">Enregistrer</button>    
+        </form>
+
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,39 @@
+body{
+    background-image:  url("/asset/images/pelouse.jpg");
+}
+.container{
+    background-color: aliceblue;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+#imgAccueil{
+    height: 50%;
+}
+#banniere{
+    background-image: url('/asset/images/banniere.jpg');
+    background-size: auto;
+    height: 120px;
+}
+article:hover{
+    background-color: rgb(231, 231, 231);
+    font-size: 1.1em;
+    cursor: pointer;
+}
+/**********************Page de connexion*******************************/
+#formContact, #formNouvelArticle, #formConnexion{
+    border: 1px gray solid;
+}
+form{
+    padding: 5px;
+}
+input:focus:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+input:valid {
+    box-shadow: 0 0 5px 1px green;
+}
+/**************************Footer********************************/
+footer{
+    background-color: #343a40!important;
+}

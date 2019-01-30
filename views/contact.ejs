@@ -1,0 +1,60 @@
+<% include ./partials/header.ejs %>
+
+<h1 class="h2">Retrouvez nos coordonnées ou remplissez le formulaire afin de nous joindre</h1>
+<br>
+<div class="row">
+    <div class="col-6">
+        <h4>Adresse Postale</h4>
+        <p>
+            Blog Foot<br>
+            47 Rue du Général De Gaulle <br>
+            10002 Lausanne Cedex 9
+        </p>
+        <h4>Téléphone</h4>
+        <p>01 54 24 78 96</p>
+    </div>
+    <div class="col-6">
+        <h4>Adresse</h4>
+        <p>
+            47 Rue du Général De Gaulle <br>
+            10002 Lausanne
+        </p>
+        <a class="lienAdresse" href="#">
+            <img src="/asset/images/adresse.png" alt="adresse">
+        </a>
+    </div> 
+</div>
+
+<form class="col-4" id="formContact" action="/views/contact.ejs" method="">
+    <p class="form-group">
+        <label for="nom">*Nom</label>
+        <input type="text" name="nom" id="nom" minlength="2" maxlength="20" required>
+    </p>
+    <p class="form-group">
+        <label for="adresse">*Adresse</label>
+        <input type="text" name="adresse" id="adresse" minlength="2" maxlength="80" required>
+    </p>
+    <p class="form-group">
+        <label for="email">*E-mail</label>
+        <input type="email" name="email" id="email" required maxlength="50">
+    </p>
+    <p class="form-group">
+        <label for="telephone">*Téléphone</label>
+        <input type="tel" name="telephone" id="telephone" minlength="10" maxlength="10" required>
+    </p>
+    <p class=" form-group message">    
+        <label for="msg" id="labelMsg">*Message</label>
+        <br>
+        <textarea name="message" id="msg" cols="40" rows="5" placeholder="Ecrivez votre message !" minlength="2" maxlength="200" required></textarea>
+    </p>
+    <!--Si le champs est remplit = Attention au Robot-->
+    <p>
+        <input type="hidden" name="donnee" id="secret">
+    </p>
+    <button type="reset" class="btn btn-danger">Effacer</button>
+    <button type="submit" class="btn btn-success">Envoyer</button>    
+</form>
+<hr>
+<a href="/connexion" class=" offset-11 badge badge-secondary">Admin</a>
+
+<% include ./partials/footer.ejs %>

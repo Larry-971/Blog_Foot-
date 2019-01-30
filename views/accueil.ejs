@@ -1,0 +1,20 @@
+<% include ./partials/header.ejs %>
+
+<main>
+    <h1 class="h2 text-center">Retrouvez toutes l'actualités de la planète football</h1>
+    <hr>
+    <% for(var tv of tabArticles){%>
+        <article class="row">
+            <h4 class="col-12"><%= tv.titre %></h4>
+            <img src="/asset/images/<%=tv.url%>" alt="" class="img-fluid col-4" id="imgAccueil">
+            <p class="col-8"><%= tv.contenu %></p>
+            <span class="col-10"><%= tv.parution %></span>
+            <em><%= tv.auteur %></em>
+        </article>
+        <hr>
+    <% }%>
+
+</main>
+<a href="/connexion" class=" offset-11 badge badge-secondary">Admin</a>
+
+<% include ./partials/footer.ejs %>
